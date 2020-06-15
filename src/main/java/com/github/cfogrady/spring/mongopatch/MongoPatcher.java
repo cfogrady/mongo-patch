@@ -4,15 +4,12 @@ import com.fasterxml.jackson.databind.JavaType;
 import com.github.cfogrady.spring.mongopatch.operations.PatchOperation;
 import com.github.cfogrady.spring.mongopatch.schema.verifiers.PatchVerifierFactory;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.data.mongodb.core.query.Update;
 
 import java.util.List;
 import java.util.Map;
 
 public class MongoPatcher {
-    private final Logger logger = LoggerFactory.getLogger(getClass());
 
     private final Map<String, JavaType> schema;
     private final PatchVerifierFactory patchVerifierFactory;

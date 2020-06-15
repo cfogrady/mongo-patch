@@ -7,15 +7,12 @@ import com.github.cfogrady.spring.mongopatch.operations.AddOperation;
 import com.github.cfogrady.spring.mongopatch.operations.OperationType;
 import com.github.cfogrady.spring.mongopatch.schema.IllegalSchemaException;
 import com.github.cfogrady.spring.mongopatch.schema.verifiers.AddVerifier;
-import com.google.common.collect.Lists;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class AddVerifierPlainFieldTest {

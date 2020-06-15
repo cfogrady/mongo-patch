@@ -4,18 +4,13 @@ import com.fasterxml.jackson.databind.JavaType;
 import com.github.cfogrady.spring.mongopatch.SchemaBuilderTest;
 import com.github.cfogrady.spring.mongopatch.SchemaBuilderTest.TestClass;
 import com.github.cfogrady.spring.mongopatch.operations.AddOperation;
-import com.github.cfogrady.spring.mongopatch.schema.IllegalSchemaException;
 import com.github.cfogrady.spring.mongopatch.schema.verifiers.AddVerifier;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.util.Map;
 
 public class AddVerifierObjectListTest {
-    private final Logger logger = LoggerFactory.getLogger(getClass());
 
     private AddVerifier addVerifier = new AddVerifier();
 
