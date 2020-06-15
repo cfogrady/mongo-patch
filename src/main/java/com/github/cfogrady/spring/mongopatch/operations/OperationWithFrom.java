@@ -1,5 +1,5 @@
 package com.github.cfogrady.spring.mongopatch.operations;
 
-interface OperationWithFrom {
+public interface OperationWithFrom {
     String getFrom();
 }

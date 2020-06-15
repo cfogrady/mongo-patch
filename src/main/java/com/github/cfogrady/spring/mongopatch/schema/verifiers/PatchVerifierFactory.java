@@ -14,7 +14,8 @@ public class PatchVerifierFactory {
     private final PatchVerifier testVerifier;
 
     public PatchVerifierFactory() {
-        this(new AddVerifier(), null, null, null, null, null);
+        this(new AddVerifier(), new RemoveVerifier(), new ReplaceVerifier(), new CopyVerifier(),
+            new MoveVerifier(), new TestVerifier());
     }
 
     public PatchVerifierFactory(PatchVerifier addVerifier,

@@ -1,5 +1,5 @@
 package com.github.cfogrady.spring.mongopatch.operations;
 
-interface OperationWithValue {
+public interface OperationWithValue {
     Object getValue();
 }

@@ -18,7 +18,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class PathOperationTest {
+public class PathOperationDeserializationTest {
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
     private static ObjectMapper objectMapper;

@@ -1,6 +1,6 @@
 package com.github.cfogrady.spring.mongopatch.schema;
 
-public class IllegalSchemaException extends IllegalArgumentException {
+public class IllegalSchemaException extends IllegalStateException {
     /**
      * 
      */
