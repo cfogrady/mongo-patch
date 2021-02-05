@@ -3,50 +3,20 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.cfogrady</groupId>
-    <artifactId>spring-mongo-patch</artifactId>
+    <artifactId>mongo-patch</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!-- Dependencies -->
-        <json-patch.version>1.12</json-patch.version>
-        <mongo-driver.version>3.11.2</mongo-driver.version>
-        <spring-data-mongodb.version>2.2.6.RELEASE</spring-data-mongodb.version>
-        <embedded-mongo.version>2.2.0</embedded-mongo.version>
         <junit.version>5.6.2</junit.version>
         <slf4j.version>1.7.30</slf4j.version>
-        <apache-commons.version>3.10</apache-commons.version>
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>com.github.java-json-tools</groupId>
-            <artifactId>json-patch</artifactId>
-            <version>${json-patch.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>${apache-commons.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.mongodb</groupId>
-              <artifactId>mongo-java-driver</artifactId>
-              <version>${mongo-driver.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-mongodb</artifactId>
-            <version>${spring-data-mongodb.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>de.flapdoodle.embed</groupId>
-            <artifactId>de.flapdoodle.embed.mongo</artifactId>
-            <version>${embedded-mongo.version}</version>
-            <scope>test</scope>
-        </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
@@ -61,8 +31,13 @@
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
-            <version>1.7.30</version>
+            <version>${slf4j.version}</version>
             <scope>test</scope>
         </dependency>
                 
@@ -104,4 +79,9 @@
             </plugin>
         </plugins>
     </build>
+    <modules>
+    	<module>mongo-patch-core</module>
+    	<module>mongo-patch-driver</module>
+    	<module>mongo-patch-spring</module>
+    </modules>
 </project>

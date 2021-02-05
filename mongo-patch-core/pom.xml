@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.github.cfogrady</groupId>
+    <artifactId>mongo-patch</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+  <artifactId>mongo-patch-core</artifactId>
+  <name>mongo-patch-core</name>
+  <description>Core shared library for patching spring templates or the driver</description>
+  
+  <properties>
+    <!-- Dependencies -->
+    <apache-commons.version>3.10</apache-commons.version>
+    <jackson.version>2.12.1</jackson.version>
+    <guava.version>21.0</guava.version>
+  </properties>
+  
+  <dependencies>
+    <dependency>
+	  <groupId>com.fasterxml.jackson.core</groupId>
+	  <artifactId>jackson-databind</artifactId>
+	  <version>${jackson.version}</version>
+	</dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>${apache-commons.version}</version>
+    </dependency>
+	<dependency>
+	  <groupId>com.google.guava</groupId>
+	  <artifactId>guava</artifactId>
+	  <version>${guava.version}</version>
+	</dependency>
+  </dependencies>
+</project>
